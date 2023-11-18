@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .header {
+            background-color: #463000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #fff;
+        }
+
+        .newsletter-content {
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #463000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #463000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cubos Academy Newsletter</h1>
+        </div>
+        <div class="newsletter-content">
+            <h2>{{titulo}}</h2>
+            <p>Olá,</p>
+            <p>{{nome}}</p>
+            <p><br>{{texto}}</p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
+        <div class="footer">
+            &copy; Cubos Academy | <a href="#">Cancelar inscrição</a>
+        </div>
+    </div>
+</body>
+
+</html>
